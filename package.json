@@ -1,0 +1,25 @@
+{
+  "name": "crypto-app",
+  "version": "0.0.1",
+  "description": "basic electron app for learning",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elinhart/crypto-app.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Ervin Linhart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elinhart/crypto-app/issues"
+  },
+  "homepage": "https://github.com/elinhart/crypto-app#readme",
+  "devDependencies": {
+    "electron": "6.0.9"
+  }
+}
