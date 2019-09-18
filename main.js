@@ -1,3 +1,4 @@
+const electron = require('electron')
 const { app, BrowserWindow, Menu } = require('electron')
 const shell = require('electron').shell
 require('electron-reload')(__dirname)
@@ -20,7 +21,7 @@ function createWindow () {
   win.loadFile('src/index.html')
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
