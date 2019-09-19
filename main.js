@@ -55,7 +55,12 @@ function createWindow () {
       
       {label:'Info',
         submenu: [
-            {label:'About'},
+            {label:'Learn more',
+            click() {
+              shell.openExternal('https://coursetro.com/courses/22/Creating-Desktop-Apps-with-Electron-Tutorial')
+          }
+          },
+            
         ]
       },
   ])
