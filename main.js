@@ -2,6 +2,7 @@ const electron = require('electron')
 const { app, BrowserWindow, Menu } = require('electron')
 const shell = require('electron').shell
 require('electron-reload')(__dirname)
+const ipc = require('electron').ipcMain
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -89,4 +90,8 @@ app.on('activate', () => {
   if (win === null) {
     createWindow()
   }
+})
+
+ipc.on('update-notify-value', function(event, arg) {
+  win.webContents.send('targetPriceVal',arg)
 })
